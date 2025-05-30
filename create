@@ -1,0 +1,13 @@
+#!/bin/bash
+
+<<help
+
+
+help
+
+echo "creation of user"
+
+read -p "enter the username"username
+read -p "enter the password"password
+
+useradd -m -p "$password" "$username"
